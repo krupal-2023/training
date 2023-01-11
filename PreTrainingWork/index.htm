@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Krupal | Zeus Learning</title>
+  </head>
+  <body>
+    <div>
+      <h1>My first web page</h1>
+      <h2>What this is</h2>
+      <p>
+        Welcome to <em>my first web page.</em>I created this page without
+        assistance of a web page editor.Just my little text editor and keen
+        <em><strong>UNDERSTANDING OF HTML.</strong></em>
+      </p>
+      <h2>Why this is</h2>
+      <ul>
+        <li>To learn HTML</li>
+        <li>
+          List element
+          <ol>
+            <li>Home</li>
+            <li>FAQ</li>
+            <li>Contact</li>
+            <li>About</li>
+          </ol>
+        </li>
+        <li>Here I have created ordered and unordered list</li>
+      </ul>
+      <h2>ZeusLearning.com</h2>
+      <a href="https://zeuslearning.com" target="_blank"
+        >This link will open zeuslearning.com in new tab.</a
+      >
+      <h2>On click of following image navigate to Google.com</h2>
+      <a href="https://google.com" target="_blank">
+        <img src="images/google.png" alt="Google" />
+      </a>
+
+      <h3>some random table</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td>Row 1, cell 1</td>
+            <td>Row 1, cell 2</td>
+            <td>Row 1, cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 2, cell 1</td>
+            <td>Row 2, cell 2</td>
+            <td>Row 2, cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 3, cell 1</td>
+            <td>Row 3, cell 2</td>
+            <td>Row 3, cell 3</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>some random form</h3>
+      <p><strong>Note:</strong> It looks a part, but won't do anything.</p>
+      <form  name="myForm">
+        <div>Name:</div>
+        <input type="text" id="name" placeholder="Your name" />
+        <div>Comments:</div>
+        <textarea cols="30" id="comments" rows="10" placeholder="Your comments"></textarea>
+        <div>Are you:</div>
+        <div>
+          <input type="radio" id="male" name="gender" value="Male" />
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" id="female" name="gender" value="Female" />
+          <label for="female">Female</label>
+        </div>
+        <button onclick="onSubmit(event)" type="submit">Submit Query</button>
+      </form>
+    </div>
+  </body>
+</html>

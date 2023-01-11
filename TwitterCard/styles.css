@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Medium.ttf');  
+    font-weight: 500;  
+}
+
+.main {
+    width: 457px;
+    height: 138px;
+}
+
+.card {
+    margin: 4px;
+    display: flex;
+}
+
+.avatar {
+    width: 130px;
+    height: 130px;
+}
+
+.btn-img {
+    width: 20px;
+    height: 20px;
+}
+
+.button-with-count{
+    display: flex;
+    align-items: center;
+    color: #858991;
+}
+
+.buttons {
+    display: flex;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 14px;
+    justify-content: center;
+}
+
+
+.username {
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #000000;
+    size: 20px;
+    margin-bottom: 14px;
+}
+
+.tweet-text {
+    font-family: 'Roboto';
+    font-weight: normal;
+    color: #000000;
+    size: 20px;
+    margin-bottom: 24px;
+}
+
+.count {
+    font-family: 'Roboto';
+    font-weight: 500;
+    size: 15px;
+    margin-left: 14px;
+    margin-right: 24px;
+}
+

@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFCC;
+}
+
+body > div {
+    margin: 0 20px;
+}
+
+h1 {
+    background-color: #990000;
+    color: #FFFFCC;
+    border-bottom: 15px solid #CC0000;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 15px;
+}
+
+h2 {
+    background-color: #009900;
+    color: #FFFFFF;
+    padding-left: 20px;
+}
+
+h3 {
+    color: #CCCCCC;
+}
+
+ul {
+    color: orange;
+}
+
+img {
+    border: 2px gray dashed;
+}
+
+table , td{
+    color: gray;
+    border: 1px solid black;
+}
