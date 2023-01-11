@@ -4,7 +4,9 @@
     font-weight: normal;
 }
 
-.temp {}
+.temp {
+	padding : 0px;
+}
 
 @font-face {
     font-family: 'Roboto';
