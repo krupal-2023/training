@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Quantum</title>
+    <link rel="stylesheet" href="scss.css">
+</head>
+<body>
+    <div class="header">
+        <img src="../quantum screen assets/icons/logo used in header.svg" alt="Quantum logo in header">
+    </div>
+    <div class="main">
+    <form action="#">
+        <div class="main-header">
+            <img src="../quantum screen assets/icons/back.svg" alt="back icon">
+            <span>Log in with Quantum</span>
+        </div>
+        <div class="radio-item">
+        <input type="radio" name="type" id="district"><label for="district">District</label>
+        <input type="radio" name="type" id="school"><label for="school">Independent School</label>
+        </div>
+
+        <div class="selectopt">
+        <label for="state" id="select-label">State*</label>
+        <br>
+        <select name="state" id="state">
+            <option>Gujarat</option>
+            <option>Maharashtra</option>
+        </select>
+        </div>
+
+        <div class="selectopt">
+        <label for="select-district" id="select-label">District*</label>
+        <br>
+        <select name="district" id="select-district">
+            <option>Amreli</option>
+            <option>Ahmedabad</option>
+        </select>
+        </div>
+
+        <div class="inputtext">
+            <input type="text" placeholder="Username/Email ID*">
+            <br>
+            <span>FORGOT USERNAME?</span>
+        </div>
+
+        <div class="inputpass">
+            <input type="password" placeholder="Password*">
+            <img src="../quantum screen assets/icons/preview.svg" alt="preview icon">
+            <br>
+            <span>FORGOT PASSWORD?</span>
+        </div>
+        <br>
+
+        <input type="checkbox" id="check"><label for="check" id="check-label">Remember Me</label>
+        <div class="login">
+            <input type="button" id="login" value="LOG IN">
+        </div>
+    </form>
+    </div>
+
+    <div class="footer-main">
+        <div class="about">
+            <div id="about">About</div>
+            <div id="contact">Contact Us</div>
+        </div>
+    
+        <div class="footer">
+            <img src="../quantum screen assets/icons/logo used in footer.svg" alt="quantum logo in footer">
+            <div class="info">
+                <div class="padding-right">Copyright &#169 2020-2021</div>
+                <div class="padding-right">Zeus Systems Pvt. Ltd.</div>
+                <div class="padding-right">All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

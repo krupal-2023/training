@@ -1,0 +1,17 @@
+@mixin common-font{
+    color: #666666;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@mixin font($color,$size,$height){
+    color: $color;
+    font-size: $size;
+    line-height: $height;
+}
+
+@mixin flex($just : center, $align : center){
+    display: flex;
+    justify-content: $just;
+    align-items: $align;
+}

@@ -1,0 +1,5 @@
+@mixin font-prop($color,$size,$height){
+    color: $color;
+    font-size: $size;
+    line-height: $height;
+}
