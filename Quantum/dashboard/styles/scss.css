@@ -1,19 +1,19 @@
 @font-face {
   font-family: Quicksand;
-  src: url("../quantum screen assets/Quicksand font 1/static/Quicksand-Regular.ttf");
+  src: url("../../quantum screen assets/Quicksand font 1/static/Quicksand-Regular.ttf");
 }
 body {
   margin: 0;
-  background: #EEEEEE;
+  background: #eeeeee;
   font-family: Quicksand;
 }
 
 .header {
-  background: #25313F url("../quantum screen assets/header pattern svg.svg");
+  background: #25313f url("../../quantum screen assets/header pattern svg.svg");
   opacity: 1;
   padding: 8px 20px;
   background-size: cover;
-  border-bottom: 2px solid #31B9E4;
+  border-bottom: 2px solid #31b9e4;
 }
 
 .navbar {
@@ -25,7 +25,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   list-style-type: none;
-  color: #3FD28B;
+  color: #3fd28b;
   text-align: center;
 }
 .list-items li {
@@ -42,21 +42,21 @@ body {
 
 .non-navigate:hover {
   color: white;
-  border-bottom: 4px solid #FFFFFF;
+  border-bottom: 4px solid #ffffff;
 }
 
 #profile-icon {
-  color: #3FD28B;
+  color: #3fd28b;
   font-size: 14px;
   line-height: 19px;
-  border: 2px solid #3FD28B;
+  border: 2px solid #3fd28b;
   border-radius: 50%;
   height: 21px;
   padding-bottom: 0px;
   width: 24px;
 }
 #profile-icon:hover {
-  border: 2px solid #3FD28B;
+  border: 2px solid #3fd28b;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -75,7 +75,7 @@ body {
 
 .main-content {
   padding: 24px;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   /* width: 100%; */
 }
 
@@ -83,7 +83,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
-  background-color: #8DDC97;
+  background-color: #8ddc97;
   margin-bottom: 24px;
 }
 
@@ -242,24 +242,6 @@ body {
   margin-top: 0px;
 }
 
-.card-1 {
-  grid-column: 1/2;
-}
-
-.card-2 {
-  grid-column: 2/3;
-}
-
-.card-3 {
-  grid-row: 2/3;
-  grid-column: 1/2;
-}
-
-.card-4 {
-  grid-row: 2/3;
-  grid-column: 2/3;
-}
-
 .flex {
   display: flex;
   margin-top: 8px;
@@ -307,7 +289,6 @@ body {
   line-height: 20px;
 }
 
-/* footer */
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -352,8 +333,8 @@ body {
 }
 
 #expired {
-  background-color: #FFE4E6;
-  color: #D80000;
+  background-color: #ffe4e6;
+  color: #d80000;
   font-size: 10px;
   line-height: 16px;
 }
@@ -363,34 +344,12 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* .footer-main{
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-  } */
   .cards-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
     width: 520px;
     margin-left: auto;
     margin-right: auto;
-  }
-  .card-1 {
-    grid-row: 1/2;
-    grid-column: 1/2;
-  }
-  .card-2 {
-    grid-row: 2/3;
-    grid-column: 1/2;
-  }
-  .card-3 {
-    grid-row: 3/4;
-    grid-column: 1/2;
-  }
-  .card-4 {
-    grid-row: 4/5;
-    grid-column: 1/2;
   }
 }
 @media (max-width: 833px) {
