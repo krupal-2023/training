@@ -81,7 +81,7 @@ for( const course of courses ) {
             <img src="${course.image}" alt="img">
             <div class="card-info">
                 <div class="card-header">
-                    <span>${course.name}</span>
+                    <span class='course-name' >${course.name}</span>
                     <img src='${course.isFavorite ? "../quantum screen assets/icons/favourite.svg" : "../quantum screen assets/icons/grey-star.png"}' alt="favourite icon">
                 </div>
                 <p class="subject">
@@ -108,7 +108,7 @@ for( const course of courses ) {
                 <p class="flex">
                         ${
                             course.studentsCount!==undefined ?
-                            `<span class="common-font mr-9">${course.studentsCount} Students</span>` : ''
+                            `<span class="common-font ${course.startDate!==undefined?'mr-9':''}">${course.studentsCount} Students</span>` : ''
                         }
                         ${
                             course.startDate!==undefined ?
@@ -119,8 +119,8 @@ for( const course of courses ) {
         </div>
         <div class="card-icon">
             <img src="../quantum screen assets/icons/preview.svg" alt="preview icon">
-            <img src="../quantum screen assets/icons/manage course.svg" alt="manage course icon">
-            <img src="../quantum screen assets/icons/grade submissions.svg" alt="grade icon">
+            <img src="../quantum screen assets/icons/manage course.svg" class='${course.isActionClickable?'':'disableButton'}' alt="manage course icon">
+            <img src="../quantum screen assets/icons/grade submissions.svg" class='${course.isActionClickable?'':'disableButton'}' alt="grade icon">
             <img src="../quantum screen assets/icons/reports.svg" alt="reports icon">
         </div>
     `;
@@ -128,44 +128,3 @@ for( const course of courses ) {
     coursesContainer.appendChild(courseCard);
 
 }
-
-/**
- <div class="card card-1">
-                <div class="card-content">
-                    <img src="../quantum screen assets/images/imageMask-1.svg" alt="img">
-                    <div class="card-info">
-                        <div class="card-header">
-                            <span>Acceleration</span>
-                            <img src="../quantum screen assets/icons/favourite.svg" alt="favourite icon">
-                        </div>
-                        <p class="subject">
-                            <span class="common-font mr-9">Physics</span>
-                            <span class="common-font">Grade 7</span>
-                            <span class="green-font">+2</span>
-                        </p>
-                        <p class="mt-0">
-                            <span class="common-font mr-5"><span class="font-b">4</span>Units</span>
-                            <span class="common-font mr-5"><span class="font-b">18</span>Lessons</span>
-                            <span class="common-font"><span class="font-b">24</span>Topics</span>
-                        </p>
-                        <p class="select-cat">
-                            <select name="name" id="name">
-                                <option>Mr. Frank's Class B</option>
-                                <option>Mr. Frank's Class A</option>
-                            </select>
-                        </p>
-                        <p class="flex">
-                            <span class="common-font mr-9">50 Students</span>
-                            <span class="common-font">21-Jan-2020 - 21-Aug-2020</span>
-                        </p>
-
-                    </div>
-                </div>
-                <div class="card-icon">
-                    <img src="../quantum screen assets/icons/preview.svg" alt="preview icon">
-                    <img src="../quantum screen assets/icons/manage course.svg" alt="manage course icon">
-                    <img src="../quantum screen assets/icons/grade submissions.svg" alt="grade icon">
-                    <img src="../quantum screen assets/icons/reports.svg" alt="reports icon">
-                </div>
-            </div>
- */
